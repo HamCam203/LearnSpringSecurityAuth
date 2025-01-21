@@ -38,6 +38,11 @@ Le but de ce projet est d'apprendre à sécuriser une application web Java en ut
 - **Maven**
 - IDE : **Eclipse**
 
+### 📦 Dépendances principales utilisées
+1. **Spring Web**  
+2. **Spring Security**  
+3. **OAuth2**
+
 ### 📚 Ressources complémentaires
 - [Documentation officielle de Spring Security](https://spring.io/projects/spring-security)
 - [Recommandations de l’OWASP](https://owasp.org/)
