@@ -22,14 +22,14 @@ public class SpringSecurityConfig {
 	@Autowired
 	private CustomUserDetailsService customUserDetailsService;
     
-    @Bean
-    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        return http.authorizeHttpRequests(auth -> {
-            auth.requestMatchers("/admin").hasRole("ADMIN");
-            auth.requestMatchers("/user").hasRole("USER");
-            auth.anyRequest().authenticated();
-        }).formLogin(Customizer.withDefaults()).build();
-    }
+	@Bean
+	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+	    return http.authorizeHttpRequests(auth -> {
+	        auth.requestMatchers("/admin").hasRole("ADMIN");
+	        auth.requestMatchers("/user").hasRole("USER");
+	        auth.anyRequest().authenticated();
+	    }).formLogin(Customizer.withDefaults()).oauth2Login(Customizer.withDefaults()).build();
+	    }
     
     @Bean
     public UserDetailsService users() {

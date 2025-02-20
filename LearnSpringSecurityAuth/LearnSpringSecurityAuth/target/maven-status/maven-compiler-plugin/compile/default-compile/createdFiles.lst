@@ -1,0 +1,6 @@
+com\openclassrooms\models\DBUser.class
+com\openclassrooms\repository\DBUserRepository.class
+com\openclassrooms\controllers\LoginController.class
+com\openclassrooms\LearnSpringSecurityAuthApplication.class
+com\openclassrooms\configuration\CustomUserDetailsService.class
+com\openclassrooms\configuration\SpringSecurityConfig.class
